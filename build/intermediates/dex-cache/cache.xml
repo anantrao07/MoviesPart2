@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        jar="/Users/anant/AndroidStudioProjects/Moviez/app/build/intermediates/exploded-aar/org.lucasr.twowayview/twowayview/0.1.4/jars/classes.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="1a2a997b75e4c94dac7051557be6b95a06566291">
+        <dex dex="/Users/anant/AndroidStudioProjects/Moviez/app/build/intermediates/pre-dexed/debug/classes-22c1ba8a18278a271077e6612cdb9ea758e71c60.jar" />
+    </item>
+
+</items>

@@ -1,0 +1,168 @@
+
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/scrollView"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:background="@color/white"
+    >
+
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:id = "@+id/moviedetails_linearlayout"
+    tools:context="app.com.moviez.anant.moviez.DetailActivityFragment"
+    android:background="@color/white"
+    android:layout_margin="4dp"
+    android:orientation="vertical"
+    >
+
+<LinearLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center">
+        <TextView
+            android:id="@+id/title_textview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="Medium Text"
+            android:textColor="@color/primarydarkstars"
+            android:textStyle="bold"
+            android:layout_centerHorizontal="true"
+            android:layout_weight="1"
+            android:padding="8dp"/>
+</LinearLayout>
+        <ImageView
+
+            android:id="@+id/movieposter"
+            android:layout_width="150dp"
+            android:layout_height="250dp"
+            android:layout_below="@+id/title_textview"
+            android:layout_gravity="center"
+            android:layout_centerHorizontal="true"
+            android:layout_weight="1"
+            android:padding="8dp"
+            android:layout_margin="4dp" />
+<LinearLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center">
+        <RatingBar
+            android:id="@+id/ratingBar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:numStars="10"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:clickable="false"
+            android:isIndicator="true"
+            style="?android:attr/ratingBarStyleSmall"
+            android:backgroundTint="@color/primarydarkstars"
+            android:layout_below="@+id/movieposter"
+            android:layout_centerHorizontal="true" />
+</LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center">
+        <TextView
+            android:id="@+id/releasedate_display"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textStyle="bold"
+            android:textColor="@color/primarydarkstars"
+            android:text="Small Text"
+            android:layout_gravity="center"
+            android:layout_below="@+id/ratingBar"
+            android:layout_centerHorizontal="true"
+
+            android:layout_weight="1"
+            android:padding="8dp"
+            android:layout_margin="4dp"/>
+        </LinearLayout>
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_weight="1">
+    <ListView
+
+        android:id="@+id/trailer_listView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/releasedate_display"
+        android:layout_alignRight="@+id/releasedate_display"
+        android:layout_alignEnd="@+id/releasedate_display"
+        android:layout_weight="1"
+        android:padding="8dp"
+        android:layout_margin="4dp"/>
+</LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/aboutmovie"
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="Small Text"
+            android:textColor="@color/primarydarkstars"
+
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_weight="1"
+            android:padding="8dp"
+            android:layout_margin="4dp"/>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Reviews"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:layout_gravity="center"
+                android:textColor="@color/primarydarkstars"
+
+                android:layout_weight="1"
+                android:padding="8dp"
+                android:textStyle="bold"
+                android:layout_margin="4dp"
+                />
+        </LinearLayout>
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_weight="1">
+            <ListView
+
+                android:id="@+id/review_listview"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+
+                android:layout_weight="2"
+                android:padding="8dp"
+                android:layout_margin="4dp"/>
+
+</LinearLayout>
+
+
+
+    </LinearLayout>
+
+</ScrollView>
